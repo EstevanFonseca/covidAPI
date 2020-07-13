@@ -1,0 +1,61 @@
+/* resets */
+body, p, h1, hr{
+    margin:0;
+    padding:0;
+}
+/* basic styles */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+article{
+    height: 200px;
+    padding: 0 10px 20px 10px;
+    margin: 15px 20px 0 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* MFB */
+body > section{
+    display: grid;
+}
+
+
+
+/* queries */
+@media screen and (min-width: 700px){
+    #cases{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px){
+    #cases{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #cases{
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
